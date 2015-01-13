@@ -1,0 +1,17 @@
+# URL: https://code.google.com/p/googlemock/downloads/list
+# Version: 1.7.0
+
+# Removed non Android build files and source of gtest:
+  rm -f aclocal.m4
+  rm -f CMakeLists.txt
+  rm -f configure
+  rm -f configure.ac
+  rm -f Makefile.am
+  rm -f Makefile.in
+  rm -rf build-aux
+  rm -rf fused-src
+  rm -rf gtest
+  rm -rf make
+  rm -rf msvc
+  rm -rf scripts
+
