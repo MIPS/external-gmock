@@ -90,7 +90,7 @@ LOCAL_C_INCLUDES := $(libgmock_host_includes)
 LOCAL_C_FLAGS += $(libgmock_cflags)
 LOCAL_MODULE := libgmock_host
 LOCAL_MULTILIB := both
-LOCAL_ADDRESS_SANITIZER := false
+LOCAL_SANITIZE := never
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -106,7 +106,7 @@ LOCAL_C_INCLUDES := $(libgmock_host_includes)
 LOCAL_C_FLAGS += $(libgmock_cflags)
 LOCAL_MODULE := libgmock_main_host
 LOCAL_MULTILIB := both
-LOCAL_ADDRESS_SANITIZER := false
+LOCAL_SANITIZE := never
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -121,7 +121,7 @@ LOCAL_SRC_FILES := gmock-all.cc
 LOCAL_C_INCLUDES := $(libgmock_target_includes)
 LOCAL_CFLAGS += $(libgmock_cflags)
 LOCAL_MODULE := libgmock
-LOCAL_ADDRESS_SANITIZER := false
+LOCAL_SANITIZE := never
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -135,7 +135,7 @@ LOCAL_SRC_FILES := gmock_main.cc
 LOCAL_C_INCLUDES := $(libgmock_target_includes)
 LOCAL_CFLAGS += $(libgmock_cflags)
 LOCAL_MODULE := libgmock_main
-LOCAL_ADDRESS_SANITIZER := false
+LOCAL_SANITIZE := never
 
 include $(BUILD_STATIC_LIBRARY)
 endif
