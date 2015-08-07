@@ -94,6 +94,7 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/../include
 LOCAL_MODULE := libgmock_host
 LOCAL_MULTILIB := both
 LOCAL_SANITIZE := never
+LOCAL_RTTI_FLAG := -frtti
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -127,6 +128,7 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/../include
 LOCAL_CFLAGS += $(libgmock_cflags)
 LOCAL_MODULE := libgmock
 LOCAL_SANITIZE := never
+LOCAL_RTTI_FLAG := -frtti
 
 include $(BUILD_STATIC_LIBRARY)
 
